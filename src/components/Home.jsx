@@ -12,7 +12,7 @@ const Home = () => {
   // let [condition, setCondition] = useState("eneko president");
 
   // const getData = () => {
-  //   const apiKey = "d17084e0de7c8414e6aae68063843130";
+  //   const apiKey = "removed";
   //   const lon = -3.70379;
   //   const lat = 40.416775;
   //   const BASEURL = "https://api.openweathermap.org/data/2.5/weather";
