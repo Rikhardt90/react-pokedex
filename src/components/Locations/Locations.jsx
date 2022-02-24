@@ -17,12 +17,12 @@ export default function Locations() {
     console.log(locations);
   
     return (
-      <div>
+      <div className="locations">
         {locations
           // .filter((character) => character.name.toLowerCase().includes("r"))
           .map((location) => {
             return (
-              <div key={location.id}>
+              <div className="locations-card" key={location.id}>
                 <h3>{location.name}</h3>
                 <img src="https://images.newscientist.com/wp-content/uploads/2017/06/21180000/planet-10-orange-blue-final-small.jpg" alt={location.name} />
                 <h2></h2>

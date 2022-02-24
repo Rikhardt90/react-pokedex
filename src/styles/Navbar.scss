@@ -1,11 +1,37 @@
-nav{
-    width: 100vw;
-    height: 10vh;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:space-around;
-
-    background-color: black;
+nav {
+  width: 100vw;
+  height: 10vh;
+  top: 0;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(59, 59, 59);
+  a {
+    color: rgb(96, 223, 96);
+    text-decoration: none;
+  }
 }
+
+@media (min-width: 290px) {
+    nav {
+        a {
+         font-size: 1em;
+        }
+      }
+}
+@media (min-width: 600px) {
+    nav {
+        a {
+         font-size: 2em;
+        }
+      }
+}
+@media (min-width: 1300px) {
+    nav {
+        a {
+         font-size: 3em;
+        }
+      }
+}
+
