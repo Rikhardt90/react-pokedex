@@ -2,13 +2,12 @@ import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import axios from "axios";
-import "./Locations.scss"
+import "../../styles/Locations.scss"
 
 export default function Locations() {
     const [locations, setLocations] = useState([]);
     const URL = "https://rickandmortyapi.com/api/location";
-    const locationName = locations.name;
-  
+
     useEffect(() => {
       axios(URL).then((res) => {
         setLocations(res.data.results);

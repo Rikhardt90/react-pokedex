@@ -1,53 +1,14 @@
 import React from "react";
-import "./Home.scss";
-import { useState } from "react";
-import axios from "axios";
+import "../styles/Home.scss"
 
 const Home = () => {
   return(
-    <div className="home"></div>
+    <div className="home">
+      <h2>Rick & Morty app</h2>
+      <img src="https://www.pngplay.com/wp-content/uploads/10/Rick-And-Morty-Background-PNG.png" alt="" />
+
+    </div>
   );
-  // let [tiempo, setTiempo] = useState("-");
-  // let [localidad, setLocalidad] = useState("-");
-  // let [condition, setCondition] = useState("eneko president");
-
-  // const getData = () => {
-  //   const apiKey = "d17084e0de7c8414e6aae68063843130";
-  //   const lon = -3.70379;
-  //   const lat = 40.416775;
-  //   const BASEURL = "https://api.openweathermap.org/data/2.5/weather";
-  //   const URL = "?lat=" + lat + "&lon=" + lon + "&appid=" + apiKey;
-
-  //   axios(BASEURL + URL).then((res) => {
-  //     const weatherData = res.data;
-  //     console.log(weatherData);
-  //     const tiempo = weatherData.main.temp;
-  //     const localidad = weatherData.name;
-  //     const condition = weatherData.weather[0].description;
-  //     updateData(tiempo, localidad, condition);
-  //   });
-  // };
-
-  // const updateData = (tiempo, localidad, condition) => {
-
-  //   setTiempo(tiempo);
-  //   setLocalidad(localidad);
-  //   setCondition(condition);
-
-  // };
-
-  // return (
-  //   <div className="div-principal">
-  //     <div className="container">
-  //       <h3>
-  //         {tiempo} en {localidad}, with {condition}
-  //       </h3>
-  //       <button className="btn" onClick={() => getData()}>
-  //         Actualizar
-  //       </button>
-  //     </div>
-  //   </div>
-  // );
 };
 
 export default Home;
